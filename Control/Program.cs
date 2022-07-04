@@ -12,4 +12,12 @@ for (int i = 0; i < len; i++){
         j = j + 1;
     }
 }
+Console.Write("[");
+for (int i = 0; i < j; i++){
+    Console.Write($"'{newarray[i]}'");
+    if (i != j-1){
+        Console.Write(",");
+    }
+}
+Console.Write("]");
 
