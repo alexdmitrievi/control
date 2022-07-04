@@ -6,4 +6,10 @@ string[] array = {"Hello","25","father","1994","hi"};
 int len = array.Length;
 string[] newarray = new string[len];
 int j = 0;
+for (int i = 0; i < len; i++){
+    if (array[i].Length <= 3){
+        newarray[j] = array[i];
+        j = j + 1;
+    }
+}
 
